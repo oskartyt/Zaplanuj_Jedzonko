@@ -1,0 +1,52 @@
+@import "../settings/colors";
+
+.landingPageContainer {
+  section:nth-of-type(3) {
+    text-align: center;
+
+    .row {
+      .col-2 {
+        color: $navigationColor;
+
+        i {
+          font-size: 60px;
+          margin-top: 60px;
+          margin-bottom: 60px;
+        }
+
+        h3 {
+          padding: 20px;
+        }
+
+        p {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  section:nth-of-type(5) {
+    /*text-align: center;*/
+    .row {
+      .col-5 {
+        color: $navigationColor;
+
+        h3 {
+          margin-top: 60px;
+          padding-bottom: 20px;
+        }
+
+        p {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+#author-photo {
+  width: 100%;
+  padding-top: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: $navigationColor;
+}

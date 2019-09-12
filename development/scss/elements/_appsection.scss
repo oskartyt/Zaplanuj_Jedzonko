@@ -1,0 +1,36 @@
+.appsection {
+  align-items:center;
+  flex-direction: column;
+  border: $sectionborder;
+  padding-top:50px;
+  background-color: white;
+  h2 {
+    font-size:$biggertitleSize;
+    color:$headerColor;
+    font-weight:800;
+  }
+  span {
+    color:$headerColor;
+    font-size:$titleSize;
+    font-weight:800;
+  }
+  span:nth-of-type(1) {
+    padding-top:25px;
+    padding-bottom:10px;
+  }
+  input[type=text] {
+    width:270px;
+    border:1px solid $tableColor;
+    padding-left:10px;
+    padding-bottom:3px;
+  }
+  input[type=submit] {
+    width:150px;
+    font-size: $biggertitleSize;
+    color:$fontWhite;
+    background-color: $buttonsColor;
+    font-weight:800;
+    margin-bottom:20px;
+    padding-bottom:3px;
+  }
+}

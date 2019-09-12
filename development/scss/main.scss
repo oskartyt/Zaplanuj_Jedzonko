@@ -1,0 +1,25 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+
+@import "generic/reset";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/all";
+
+@import "elements/header";
+@import "elements/section2";
+@import "elements/recipysection";
+@import "elements/section4";
+@import "elements/navigation";
+@import "elements/desktop";
+@import "elements/addPlan";
+@import "elements/appsection.scss";
+@import "elements/contentGrid";
+@import "elements/content";
+@import "elements/carousel";
+@import "elements/footer";
+@import "elements/addRecipe";

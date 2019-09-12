@@ -1,0 +1,49 @@
+@import "../settings/colors";
+@import "../elements/contentGrid";
+
+.footer_column {
+  color:$fontWhite;
+  text-align: left;
+  p {
+    padding-bottom:10px;
+  }
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  ul {
+    padding-inline-start: 20px;
+  }
+  .fab {
+    font-size:25px;
+    padding-top:20px;
+    padding-right:25px;
+  }
+  input[type=text] {
+    width:120px;
+  }
+  input[type=submit] {
+    @include buttonContent();
+    font-weight:900;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color:$headerColor;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  p {
+    font-size:20px;
+    color:$fontWhite;
+  }
+  span{
+    font-size:20px;
+    color:$buttonsColor;
+  }
+}
+
+
+

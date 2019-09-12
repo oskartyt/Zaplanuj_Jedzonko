@@ -1,0 +1,145 @@
+.desktop{
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  .top{
+    justify-content: space-between;
+    align-items: center;
+    .addWidgetButtons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 350px;
+      color: $succesColor;
+      a{
+        text-decoration: none;
+        color: $succesColor;
+      }
+      .addWidgetButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
+        width: 150px;
+        border: 3px dashed $succesColor;
+        background-color: white;
+        font-weight: bold;
+        i{
+          font-size: 50px;
+          padding: 10px;
+        }
+      }
+    }
+    .widgetBox {
+      width: calc(100% - 380px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 150px;
+
+      .widgetBorder {
+        border: 3px dashed;
+        width: 100%;
+        height: 31%;
+        padding-top: 5px;
+        background-color: white;
+        font-size: 17px;
+        font-weight: bold;
+      }
+
+      .blueWidget {
+        border-color: $infoColor;
+        color: $infoColor;
+      }
+
+      .yellowWidget {
+        border-color: $warningColor;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        color: $warningColor;
+      }
+
+      .greenWidget {
+        border-color: $succesColor;
+        color: $succesColor;
+      }
+    }
+  }
+  .bottom{
+    width: 100%;
+    height: 750px;
+    border: 1px solid black;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    .userPlan{
+      color: $buttonsColor;
+      font-weight: bold;
+      padding-bottom: 40px;
+      font-size: $biggertitleSize;
+      span{
+        font-size: inherit;
+      }
+
+    }
+  }
+}
+
+.borderTable {
+  border-collapse: collapse;
+  th {
+    color: $navigationColor;
+    font-size: $biggesttitleSize;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $navigationColor;
+    border-top: 1px solid $navigationColor;
+    padding-top:20px;
+  }
+
+  td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: $titleSize;
+  }
+  tr{
+    border-bottom: 1px solid $navigationColor;
+    border-top: 1px solid $navigationColor;
+    color: $tableColor;
+  }
+}
+
+.bottom {
+  div.changePlan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+    div.colorButton{
+      color: $buttonsColor;
+    }
+    i {
+      color: $buttonsColor;
+    }
+  }
+}
+.widgetIcon{
+  font-size: 25px;
+  padding-right: 10px;
+  padding-left: 2px;
+}
+
+.crossIcon{
+  text-align: right;
+  font-size: 25px;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.placeBox{
+  display: flex;
+  justify-content: space-between;
+}

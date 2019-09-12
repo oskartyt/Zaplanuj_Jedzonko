@@ -1,0 +1,65 @@
+@import "../settings/colors";
+@import "../generic/reset";
+
+/*Ta zmienna służy do ustawiania wysokości całej sekcji karuzeli*/
+$carouselHeight: 400px;
+
+/* Kontener karuzeli */
+.carousel {
+  height: $carouselHeight;
+  color: $navigationColor;
+}
+
+/* Itemy/Slajdy karuzeli */
+.carousel_item {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  .top_part, .bottom_part {
+    height: 50%;
+    position:relative;
+    h1, p {
+      position: absolute;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+    h1 {
+      bottom: 0;
+    }
+    p {
+      top: 0;
+    }
+  }
+}
+
+/* Buttony - next i previous */
+.prev, .next {
+  height: $carouselHeight;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: 20px;
+  color: $fontBlack;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: 0.6s ease;
+}
+
+.prev {
+  float: left;
+
+}
+
+.next {
+  float: right;
+}
+
+/* Dodanie kolorku po najechaniu kursorem na button*/
+.prev:hover, .next:hover {
+  background-color: $buttonsColor;
+  color: $fontWhite;
+}

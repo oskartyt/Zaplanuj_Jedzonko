@@ -1,0 +1,21 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: $generalFontSize;
+  font-family: $textFont;
+
+  h1{
+    font-size: 3em;
+  }
+  h2{
+    font-size: 2.2em;
+  }
+  h3{
+    font-size: 1.5em;
+  }
+}

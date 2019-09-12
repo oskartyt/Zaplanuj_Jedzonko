@@ -1,0 +1,132 @@
+@import "../generic/reset";
+@import "../settings/colors";
+@import "../settings/fonts";
+@import "../settings/all";
+
+.addRecipe {
+  @include appActivePanelFrame;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  .header_part {
+    width: 100%;
+    .addRecipe_title {
+      position: relative;
+      border-bottom: 1px solid $tableColor;
+      padding-bottom: 5px;
+      h3 {
+        left: 0;
+      }
+      button {
+        @include buttonContent;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 5px;
+      }
+    }
+    .addRecipe_description {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      form {
+        div {
+          padding-bottom: 5px;
+          label {
+            display: block;
+            float: left;
+            width: 15%;
+            font-size: 16px;
+          }
+          input {
+            width: 70%;
+            border: 1px solid $tableColor;
+          }
+          textarea {
+            width: 70%;
+            border: 1px solid $tableColor;
+          }
+        }
+      }
+    }
+  }
+
+  .editing_part {
+    width: 100%;
+    display: flex;
+
+    .left-column, .right-column {
+      width: 50%;
+      height: 100%;
+      div {
+        h3 {
+          display: inline-block;
+          width: 100%;
+          border-bottom: 1px solid black;
+        }
+        textarea {
+          width: 95%;
+          float: left;
+          margin-top: 10px;
+          border: 1px solid $tableColor;
+        }
+        button {
+          margin-top: 10px;
+          font-size: 20px;
+          color: $succesColor;
+          float: right;
+        }
+        ol, ul {
+          width: 95%;
+          margin-top: 20px;
+          padding-left: 25px;
+          padding-right: 25px;
+          min-height: 200px;
+          max-height: 200px;
+          border: 1px solid $tableColor;
+          overflow: auto;
+          li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            p{
+              display: list-item;
+              float:left
+            }
+          }
+         /* &:before, &:after {
+            content: "";
+            clear: both;
+            display: block;
+            }*/
+          .delete-button, .edit-button{
+            display: inline-block;
+            background-color: $backgroundColor;
+            color: red;
+            font-size: 14px;
+            margin-top: 3px;
+            margin-right: 5px;
+            margin-left: 5px;
+            float: left;
+          }
+          .edit-button{
+            color: $buttonsColor;
+          }
+        }
+        &:after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+      }
+    }
+    .left-column {
+      margin-right: 20px;
+    }
+    .right-column {
+      margin-left: 20px;
+    }
+  }
+}

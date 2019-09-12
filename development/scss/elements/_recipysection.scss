@@ -1,0 +1,82 @@
+.recipysection {
+  width:100%;
+  border:$sectionborder;
+  background-color: $fontWhite;
+  justify-content:flex-start;
+  flex-direction:column;
+  padding: 30px;
+  div {
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 1px solid $tableColor;
+    h2 {
+      color: $buttonsColor;
+
+    }
+    .plus {
+      font-size:$biggesttitleSize;
+      color:$succesColor;
+
+    }
+  }
+
+  .recipiestable {
+  //padding: 80px 150px 0px 20px;
+    margin-top: 30px;
+    border-collapse:collapse;
+    th{
+      font-size: $biggertitleSize;
+      color: $navigationColor;
+      text-align: left;
+      border-bottom: 1px solid $tableColor;
+    }
+    th:nth-of-type(1) {
+      width: 10%;
+    }
+    th:nth-of-type(2) {
+      width:25%;
+    }
+    th:nth-of-type(3) {
+      width:45%;
+    }
+    th:nth-of-type(4) {
+      width:20%;
+    }
+
+    tr {
+      color: $tableColor;
+
+    }
+
+    td {
+      line-height: 20px;
+      border-bottom: 1px solid $tableColor;
+      padding-bottom:10px;
+      padding-top:10px;
+    }
+    td:nth-of-type(1) {
+      width:10%;
+    }
+    td:nth-of-type(2) {
+      font-size:$titleSize;
+      width:25%;
+    }
+    td:nth-of-type(3) {
+      width:45%;
+      //padding-top:20px;
+    }
+    td:nth-of-type(4) {
+      width:20%;
+    }
+    .edit-button {
+      color:$warningColor;
+      font-size:$titleSize;
+      background-color:$fontWhite;
+    }
+    .delete-button {
+      color:$binColor;
+      font-size:$titleSize;
+      background-color:$fontWhite;
+    }
+  }
+}

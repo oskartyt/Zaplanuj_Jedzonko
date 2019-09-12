@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+<header>
+    <div class="logo">
+        <span id="first">Zaplanuj</span>
+        <span id="second">Jedzonko</span>
+    </div>
+    <div class="name">
+        <span>Imię</span>
+        <i class="user fas fa-user-circle"></i>
+    </div>
+</header>
+<div class="container--flex content">
+    <nav class="navigation__panel">
+        <ul>
+            <a href="app.html"><li>Pulpit</li></a>
+            <a href="recipes.html"><li>Przepisy</li></a>
+            <a href="schedules.html"><li>Plany</li></a>
+        </ul>
+    </nav>
+    <div class="inner__padding">
+
+        <section class="container--flex appsection">
+            <h2>Witaj,</h2>
+            <span>Wygląda na to, że jesteś tutaj pierwszy raz!</span>
+            <input id="userNameInput" type="text" name="text" placeholder="tutaj wpisz jak masz na imię"><br>
+            <input id="userButton" type="submit" value="Gotowe!">
+            <span>Podaj nam swoje imię a my zorganizujemy dla Ciebie naszą aplikację :)</span>
+        </section>
+        <section class="container--flex recipysection">
+            <div class="container--flex">
+                <h2>Lista przepisów</h2>
+                <i class="addNewRecipe plus fas fa-plus-square"></i>
+            </div>
+            <table class="recipiestable">
+                <tr>
+                    <th>ID</th>
+                    <th>Nazwa</th>
+                    <th>Opis</th>
+                    <th>Akcje</th>
+                </tr>
+            </table>
+        </section>
+        <section class="container--flex addRecipe">
+            <div class = "header_part">
+                <div class = "addRecipe_title">
+                    <h3>EDYCJA PRZEPISU</h3>
+                    <button id="add-recipe" class="button">Zapisz i zamknij</button>
+                </div>
+                <div class = "addRecipe_description">
+                    <form>
+                        <div>
+                            <label for="recipe-name">Nazwa przepisu</label>
+                            <input name="recipe-name" id="recipe-name" type="text" placeholder="Tutaj wpisz nazwę przepisu">
+                        </div>
+                        <div>
+                            <label for="recipe-description">Opis przepisu</label>
+                            <textarea name="recipe-description" id="recipe-description" placeholder="Tutaj wpisz opis przepisu" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class = "editing_part">
+                <div class = "left-column">
+                    <div>
+                        <h3>INSTRUKCJE</h3>
+                    </div>
+                    <div>
+                        <textarea id="new-instruction" rows="5"></textarea>
+                        <button id="add-instruction" class="fas fa-plus-square"></button>
+                    </div>
+                    <div>
+                        <ol id="instructions"></ol>
+                    </div>
+                </div>
+                <div class = "right-column">
+                    <div>
+                        <h3>SKŁADNIKI</h3>
+                    </div>
+                    <div>
+                        <textarea id="new-ingredient" rows="5"></textarea>
+                        <button id="add-ingredient" class="fas fa-plus-square"></button>
+                    </div>
+                    <div>
+                        <ul id="ingredients"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="./js/recipies.js"></script>
+</body>
+</html>

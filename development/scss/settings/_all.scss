@@ -1,0 +1,22 @@
+@import "../settings/colors";
+
+.container{
+  width: 100%;
+}
+
+.container--flex{
+  @extend .container;
+  display: flex;
+}
+
+
+@mixin buttonContent(){
+  background-color: $buttonsColor;
+  color:$fontWhite;
+}
+
+@mixin appActivePanelFrame {
+  background-color: $backgroundColor;
+  border: 1px dashed $tableColor;
+}
+$sectionborder: 1px dashed $tableColor;

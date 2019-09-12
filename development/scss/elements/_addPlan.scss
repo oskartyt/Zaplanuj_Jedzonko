@@ -1,0 +1,104 @@
+.add__plan{
+  background-color: white;
+  border: $sectionborder;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  .title{
+    border-bottom: 1px solid $tableColor;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    span{
+      color: $buttonsColor;
+      font-size: $biggertitleSize;
+      font-weight: bold;
+    }
+    a{text-decoration: none}
+    .add__plan__button{
+      @include buttonContent();
+      padding: 5px;
+    }
+  }
+  .plan__data{
+    padding: 10px 20px 10px 10px;
+    .main__info__plan{
+      padding-bottom: 20px;
+      div{
+        justify-content: flex-start;
+        color: $tableColor;
+        padding-bottom: 10px;
+        span{
+          width: 150px;
+          height: 40px;
+          padding-top: 11px;
+          font-size: $titleSize;
+        }
+        input{
+          width: calc(100% - 150px);
+          height: 40px;
+          border: 1px solid $tableColor;
+        }
+        textarea{
+          width: calc(100% - 150px);
+          height: 120px;
+          border: 1px solid $tableColor;
+        }
+        #plan__number{
+          width: 40px;
+          height: 40px;
+          text-align: center;
+        }
+      }
+
+    }
+    .table__plan{
+      table{
+        border-collapse: collapse;
+        tr{
+          th{
+            color: $headerColor;
+            border-top: 1px solid $tableColor;
+            border-bottom: 1px solid $tableColor;
+            font-size: $titleSize;
+            padding: 10px;
+            width: 16.666%;
+          }
+          th.meal{
+            height: 70px;
+          }
+
+          th.empty{
+            border-top: none;
+          }
+          td{
+            border-bottom: 1px solid $tableColor;
+            width: 16.666%;
+            height: 40px;
+            text-align: center;
+            select{
+              background-color: $fontWhite;
+              border: 1px solid $tableColor;
+              border-radius: 6px;
+              &:focus{
+                background-color: $fontWhite;
+                border: 1px solid $tableColor;
+                outline: 0;
+              }
+              option{
+                &:hover{
+                  background-color: $fontWhite;
+                  border: 1px solid $tableColor;
+                }
+                background-color: $fontWhite;
+                border: 1px solid $tableColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
